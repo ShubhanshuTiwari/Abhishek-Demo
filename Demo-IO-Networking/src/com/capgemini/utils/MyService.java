@@ -65,6 +65,7 @@ class MyJob implements Runnable {
 			out.println();
 			out.println("Hello, world!"+ clientSocket);
 			out.flush();
+			out.close();
 		}catch(IOException e){
 			e.printStackTrace();
 		}
@@ -72,58 +73,6 @@ class MyJob implements Runnable {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
